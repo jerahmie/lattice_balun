@@ -3,7 +3,7 @@ use lattice_balun::lattice_balun;
 fn main() {
     let r1 = 50.0;  // Ohm
 //    let r2 = 50.0;
-    let v1: Vec<f64> = (0..=500).step_by(50).map(|x| (x as f64)).collect();  // Ohm
+    let v1: Vec<f64> = (0..=100).step_by(1).map(|x| (x as f64)).collect();  // Ohm
     let f1 = 300e6; // MHz
 
     println!("R2,   C1,     L1");
